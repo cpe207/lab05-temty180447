@@ -10,15 +10,17 @@ interface Shop {
 }
 
 // assign interface/type to the function definition properly
-function buyItem(hero: Hero, shop: Shop): void {
+function buyItem(hero: Hero, shop: Shop): Hero {
   if (hero.gold >= shop.price) {
     hero.items.push(shop.item);
     hero.gold -= shop.price;
-    console.log(shop.item);
+    return hero;
   } else {
-    console.log(shop.item);
+    return hero;
   }
+  return hero;
 }
+
 
 //Test cases : assign proper type/interface to all objects
 const hero1 = {
