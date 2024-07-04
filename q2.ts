@@ -1,3 +1,4 @@
+//660610781 Phetmongkhon Rungrat
 // define interface for Student object
 interface Student {
   name: string;

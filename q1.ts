@@ -1,3 +1,4 @@
+//660610781 Phetmongkhon Rungrat
 // define interface for Hero and Shop objects
 interface Hero {
   items: string[];
