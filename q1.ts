@@ -14,9 +14,9 @@ function buyItem(hero: Hero, shop: Shop): void {
   if (hero.gold >= shop.price) {
     hero.items.push(shop.item);
     hero.gold -= shop.price;
-    console.log(`${shop.item} purchased successfully!`);
+    console.log(shop.item);
   } else {
-    console.log(`Not enough gold to buy ${shop.item}.`);
+    console.log(shop.item);
   }
 }
 
