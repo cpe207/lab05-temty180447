@@ -1,15 +1,23 @@
 // define interface for Hero and Shop objects
 interface Hero {
-  /* Your code here */
+  items: string[];
+  gold: number;
 }
 
 interface Shop {
-  /* Your code here */
+  item: string;
+  price: number;
 }
 
 // assign interface/type to the function definition properly
-function buyItem(hero, shop) {
-  /* Your code here */
+function buyItem(hero: Hero, shop: Shop): void {
+  if (hero.gold >= shop.price) {
+    hero.items.push(shop.item);
+    hero.gold -= shop.price;
+    console.log(`${shop.item} purchased successfully!`);
+  } else {
+    console.log(`Not enough gold to buy ${shop.item}.`);
+  }
 }
 
 //Test cases : assign proper type/interface to all objects
