@@ -3,11 +3,11 @@ function buyItem(hero, shop) {
     if (hero.gold >= shop.price) {
         hero.items.push(shop.item);
         hero.gold -= shop.price;
-        console.log("".concat(shop.item, " purchased successfully!"));
-    }
-    else {
-        console.log("Not enough gold to buy ".concat(shop.item, "."));
-    }
+        return hero;
+      } else {
+        return hero;
+      }
+      return hero;
 }
 //Test cases : assign proper type/interface to all objects
 var hero1 = {
