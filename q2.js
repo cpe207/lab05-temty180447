@@ -1,9 +1,8 @@
 //660610781 Phetmongkhon Rungrat
 // assign interface/type to the function definition properly
 function findTopNames(students) {
-    return students
-        .filter(function (student) { return student.score > 8; })
-        .map(function (student) { return student.name; });
+    /* Your code here */
+    return students.filter(function (students) { return students.score > 8; }).map(function (students) { return students.name; });
 }
 // assign interface/type to the student1 object properly
 var students1 = [

@@ -5,10 +5,11 @@ function buyItem(hero, shop) {
         hero.items.push(shop.item);
         hero.gold -= shop.price;
         return hero;
-      } else {
+    }
+    else {
         return hero;
-      }
-      return hero;
+    }
+    return hero;
 }
 //Test cases : assign proper type/interface to all objects
 var hero1 = {
